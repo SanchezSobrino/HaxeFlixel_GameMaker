@@ -78,11 +78,11 @@ set -o pipefail
 set -o nounset
 # set -o xtrace
 
-# ~/Proyect/ProyectName
+# ~/Project/ProjectName
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# ~/Proyect
+# ~/Project
 __parent="$(cd "$(dirname "${__dir}")" && pwd)"
-# ~/Proyect/ProyectName/script.sh
+# ~/Project/ProjectName/script.sh
 __file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
 # script
 __scriptName="$(basename ${__file} .sh)"
