@@ -1,2 +1,3 @@
-# Temporal Name - We are open to suggestions
+# xRafter
+## The Flexible Game Maker
 Full description coming soon...

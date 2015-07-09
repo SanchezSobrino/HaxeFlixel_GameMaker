@@ -1,4 +1,4 @@
-HaxeFlixel_GameMaker/export/
-HaxeFlixel_GameMaker/assets
+editor/export/
+editor/assets
 *.tmp*
 *.swp
