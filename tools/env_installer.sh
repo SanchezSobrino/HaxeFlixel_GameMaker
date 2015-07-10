@@ -124,6 +124,7 @@ main () {
     echo -e "${NC}"
     haxelib install flixel || false
     haxelib install flixel-tools || false
+    haxelib install firetongue || false
     haxelib run flixel-tools setup || false
     flixel || false
 

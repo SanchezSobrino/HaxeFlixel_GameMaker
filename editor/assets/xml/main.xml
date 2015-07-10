@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <tile_test id="map" x="0" y="0" width ="800" height="600" tiles_w="50" tiles_h="31">
+    <min_size width="stretch:0,400" height="stretch:0,300"/>
+  </tile_test>
+</data>

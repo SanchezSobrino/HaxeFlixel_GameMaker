@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <file id="data" value="buttons.tsv"/>
+  <file id="fonts" value="fonts.xml"/>
+
+  <locale id="en-US" sort="0">
+    <ui language="Language" region="Region"/>
+    <label id="en-US,en-GB,en-CA,yo-DA" language="English" region="United States"/>
+    <label id="es-ES" language="Inglés" region="Estados Unidos"/>
+  </locale>
+
+  <locale id="es-ES" sort="1">
+    <ui language="Language" region="Region"/>
+    <label id="en-US,en-GB,en-CA,yo-DA" language="Spanish" region="Spain"/>
+    <label id="es-ES" language="Español" region="España"/>
+  </locale>
+</data>
