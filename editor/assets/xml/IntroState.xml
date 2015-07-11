@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <include id="_definitions"/>
+
+  <button id="btnNewProject" center_x="true" x="0" y="535" label="$NEW_PROJECT">
+    <param type="string" value="onClickNewProject"/>
+    <param type="int" value="25"/>
+  </button>
+
+  <button id="btnOpenProject" center_x="true" x="0" y="635" label="$OPEN_PROJECT">
+    <param type="string" value="onClickOpenProject"/>
+  </button>
+</data>

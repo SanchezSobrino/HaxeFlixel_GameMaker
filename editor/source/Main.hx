@@ -7,11 +7,12 @@ import flash.events.Event;
 import flash.Lib;
 import flixel.FlxGame;
 import flixel.FlxState;
-
-import Locale;
+import flixel.addons.ui.FlxUIState;
 
 class Main extends Sprite
 {
+    public static var tongue:FireTongueEx;
+
     var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
     var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
     var initialState:Class<FlxState> = IntroState; // The FlxState the game starts with.
@@ -65,11 +66,11 @@ class Main extends Sprite
             gameHeight = Math.ceil(stageHeight / zoom);
         }
 
-        Locale.init("en-US", function() {
-                addChild(new FlxGame(gameWidth,
-                        gameHeight, initialState, zoom,
-                        framerate, framerate, skipSplash,
-                        startFullscreen));
-            });
+        if (Main.tongue == null) {
+            Main.tongue = new FireTongueEx();
+            Main.tongue.init("en-US");
+            FlxUIState.static_tongue = Main.tongue;
+        }
+        addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
     }
 }
