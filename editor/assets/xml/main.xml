@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-  <tile_test id="map" x="0" y="0" width ="800" height="600" tiles_w="50" tiles_h="31">
-    <min_size width="stretch:0,400" height="stretch:0,300"/>
-  </tile_test>
+  <definition id="grey" src="ui/chrome/dark_grey"/>
+
+
+  <group id="left_background"/>
+    <chrome id="left_panel" x="0" y="0" width="100" height="screen.height" use_def="grey" group="left_background">
+      <anchor x="left" y="top" x-flush="left" y-flush="top"/>
+      <min_size width="100" height="100%"/>
+    </chrome>
+
+
+  <group id="left"/>
+    <button id="prueba" x="left_panel.left+5" y="5" width="left_panel.width-10" group="left_elements" label="prueba1">
+      <min_size width="left_panel.width-10"/>
+    </button>
+
+
+    <tile_test id="map" x="10" y="10" width ="800" height="600" tiles_w="50" tiles_h="31">
+      <anchor x="left_panel.right" y="0"/>
+      <min_size width="stretch:left_panel.right,right" height="stretch:0,300"/>
+    </tile_test>
+
+
 </data>

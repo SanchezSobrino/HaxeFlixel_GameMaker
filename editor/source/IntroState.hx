@@ -38,6 +38,7 @@ class IntroState extends FlxUIState
     {
         var arg1:Int = cast(params[1], Int);
         trace("btnNewProject clicked: " + arg1);
+        FlxG.switchState(new EditorState());
     }
 
     private function onClickOpenProject(?params:Array<Dynamic>):Void
