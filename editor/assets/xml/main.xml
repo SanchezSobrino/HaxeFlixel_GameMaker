@@ -3,6 +3,12 @@
   <definition id="grey" src="ui/chrome/dark_grey"/>
 
 
+    <tile_test id="map" x="0" y="0" tiles_w="50" width="1080" height="600" tiles_h="31">
+      <anchor x="left_panel.right" y="left_panel.top" x-flush="left" y-flush="top"/>
+      <min_size width="stretch:left_panel.right,right_panel.left" height ="2000"/>
+    </tile_test>
+
+
   <group id="left_background"/>
     <chrome id="left_panel" x="0" y="0" width="100" height="screen.height" use_def="grey" group="left_background">
       <anchor x="left" y="top" x-flush="left" y-flush="top"/>
@@ -16,10 +22,11 @@
     </button>
 
 
-    <tile_test id="map" x="10" y="10" width ="800" height="600" tiles_w="50" tiles_h="31">
-      <anchor x="left_panel.right" y="0"/>
-      <min_size width="stretch:left_panel.right,right" height="stretch:0,300"/>
-    </tile_test>
+  <group id="right_background"/>
+    <chrome id="right_panel" x="0" y="0" width="100" height="screen.height" use_def="grey" group="right_background">
+      <anchor x="right" y="top" x-flush="right" y-flush="top"/>
+      <min_size width="100" height="100%"/>
+    </chrome>
 
 
 </data>

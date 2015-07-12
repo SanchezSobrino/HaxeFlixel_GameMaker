@@ -16,7 +16,6 @@ class EditorState extends FlxUIState
     {
         _xml_id = "main";
         super.create();
-        _map = cast _ui.getAsset("prueba");
     }
 
     override public function destroy():Void
