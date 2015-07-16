@@ -3,9 +3,10 @@
   <definition id="grey" src="ui/chrome/dark_grey"/>
 
 
-    <tile_test id="map" x="0" y="0" tiles_w="50" width="1080" height="600" tiles_h="31">
+  <group id="grp_tiletest"/>
+    <tile_test id="map" x="0" y="0" tiles_w="50" width="1080" height="600" tiles_h="31" group="grp_tiletest">
       <anchor x="left_panel.right" y="left_panel.top" x-flush="left" y-flush="top"/>
-      <min_size width="stretch:left_panel.right,right_panel.left" height ="2000"/>
+      <min_size width="2000" height ="2000"/>
     </tile_test>
 
 
